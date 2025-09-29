@@ -26,7 +26,7 @@ jobs:
         run: pnpm exec outdated_check
         continue-on-error: true
       - name: prettify the code
-        run: pnpm exec prettify
+        run: pnpm exec prettier
       - name: run tests
         run: pnpm test
         
