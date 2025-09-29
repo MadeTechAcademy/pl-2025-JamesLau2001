@@ -13,6 +13,8 @@ jobs:
         uses: actions/checkout@v5
       - name: install pnpm
         uses: pnpm/action-setup@v3
+        with:
+          version: latest
       - name: install dependencies
         run: pnpm install
       - name: check for outdated packages
@@ -21,7 +23,6 @@ jobs:
         run: pnpm exec prettier
       - name: run tests
         run: pnpm test
-        with:
-          version: latest
+        
 
      
