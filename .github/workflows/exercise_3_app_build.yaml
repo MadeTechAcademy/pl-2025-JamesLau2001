@@ -22,10 +22,10 @@ jobs:
           version: latest
       - name: install dependencies
         run: pnpm install
-      # - name: check for outdated packages
-      #   run: pnpm outdated
+      - name: check for outdated packages
+        run: pnpm outdated_check
       - name: prettify the code
-        run: pnpm exec prettier
+        run: pnpm prettify
       - name: run tests
         run: pnpm test
         
