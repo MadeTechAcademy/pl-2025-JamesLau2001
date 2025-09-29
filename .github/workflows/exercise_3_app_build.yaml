@@ -23,9 +23,9 @@ jobs:
       - name: install dependencies
         run: pnpm install
       - name: check for outdated packages
-        run: pnpm outdated_check
+        run: pnpm exec outdated_check
       - name: prettify the code
-        run: pnpm prettify
+        run: pnpm exec prettify
       - name: run tests
         run: pnpm test
         
