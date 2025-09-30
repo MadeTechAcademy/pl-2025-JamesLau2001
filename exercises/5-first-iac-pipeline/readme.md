@@ -17,3 +17,6 @@ There could be more than one way to check the pipeline has completed, what ways 
 
 ## Notes
 Add your thoughts and questions here
+. ROLE_TO_ASSUME can be found in the terraform.tfstate file after you terraform apply
+. When you need to give GitHub the secrets and variables, and we know it accesses it with secrets.{example}, you only need to give GitHub the 'example' part
+. As mentioned before, the kms alias requires you to give 'alias/{alias name}', not just the 'alias name'
