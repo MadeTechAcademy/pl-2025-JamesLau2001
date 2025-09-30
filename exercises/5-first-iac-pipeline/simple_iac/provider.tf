@@ -27,7 +27,7 @@ terraform {
     key            = "pl2025_simple/terraform.tfstate"
     region         = "eu-west-2"
     encrypt        = true
-    kms_key_id     = "jlau2001aws"
+    kms_key_id     = "alias/jlau2001aws"
     use_lockfile = true
   }
 }
