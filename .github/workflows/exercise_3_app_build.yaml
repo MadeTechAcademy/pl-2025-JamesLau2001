@@ -1,0 +1,33 @@
+name: github-actions
+
+on:
+  push:
+    branches:
+      - main
+
+defaults:
+  run:
+    shell: bash
+    working-directory: exercises/3-github-actions/app
+
+jobs:
+  Build_and_run:
+    runs-on: ubuntu-latest
+    steps: 
+      - name: checkout the code
+        uses: actions/checkout@v5
+      - name: install pnpm
+        uses: pnpm/action-setup@v3
+        with:
+          version: latest
+      - name: install dependencies
+        run: pnpm install
+      - name: check for outdated packages
+        run: pnpm outdated_check || true
+      - name: prettify the code
+        run: pnpm prettify
+      - name: run tests
+        run: pnpm test
+        
+
+     

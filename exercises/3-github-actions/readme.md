@@ -33,3 +33,8 @@ For discussion: What else is missing from this pipeline? (no need to add it righ
 
 ## Notes
 Add your thoughts and questions here
+. Running pnpm commands requires you to do $pnpm exec {command}
+. The syntax for jobs requires you to name the job
+. You have to specify the version of pnpm to install
+. Checking out the code does it to the root directory of where the yml file is located
+- Due to this, we need to set the working directory

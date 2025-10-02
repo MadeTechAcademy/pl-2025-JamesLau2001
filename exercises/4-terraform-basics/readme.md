@@ -24,5 +24,10 @@ Keep a note of the following to use later:
 
 ## Notes
 Add your thoughts and questions here
+. When configuring the s3 bucket, aws appends 'alias/' to the kms name you provide
+- This means when you are asked to use the name, you need to type out alias/{alias name}
+. If you don't need to destory the bucket, you can just run terroform plan to edit changes
+. Ensure that the owner name is lowercase, best to avoid special characters (from my experience)
+. Account ID can be found in the AWS console top right corner of the screen
 
 
